@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MMASS Pricing Calculator</title>
+<meta name="theme-color" content="#07101e">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app"><aside class="side"><div class="brand">MMASS Pricing<small>Cost & Profitability Engine</small></div><div id="nav" class="nav"></div></aside><main class="main"><div class="top"><div><h1 id="title">Dashboard</h1><div class="sub">True gross-margin pricing for custom apparel and promotional products.</div></div><div class="actions"><button class="btn sec sm" onclick="backup()">Export</button><label class="btn sec sm" style="margin:0">Import<input type="file" accept=".json" hidden onchange="restore(event)"></label></div></div><section id="dashboard" class="section on"></section><section id="builder" class="section"></section><section id="materials" class="section"></section><section id="quote" class="section"></section><section id="whatif" class="section"></section><section id="settings" class="section"></section></main></div><div id="mnav" class="mnav"></div>
+
+<script src="app1.js"></script>
+<script src="app2.js"></script>
+<script src="app3.js"></script>
+<script src="app4.js"></script></body></html>
