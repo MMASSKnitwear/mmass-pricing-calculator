@@ -4,3 +4,5 @@
 @media(max-width:480px){.g4{grid-template-columns:1fr}.rowbox{grid-template-columns:1fr}.rowbox>*:last-child{grid-column:span 1}}
 .sync-status{display:inline-flex;align-items:center;gap:6px;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:#0c1425;color:#cbd5e1;font-size:11px;font-weight:850;white-space:nowrap}.sync-status:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--good)}.sync-status[data-state="busy"]:before{background:var(--warn)}.sync-status[data-state="bad"]:before{background:var(--bad)}
 @media(max-width:780px){.top{align-items:flex-start}.top .actions{justify-content:flex-end}.sync-status{order:-1}}
+
+.auth-pending .app,.auth-pending .mnav{visibility:hidden}.user-email{align-self:center;color:var(--muted);font-size:11px;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
