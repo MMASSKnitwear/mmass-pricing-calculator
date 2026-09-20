@@ -1,3 +1,4 @@
+import {authConfigured,getSession} from '../lib/auth.js';
 const KEY='mmass:pricing:v1';
 
 function env(){
@@ -21,6 +22,7 @@ async function command(args){
 
 export default async function handler(req,res){
   res.setHeader('Cache-Control','no-store, max-age=0');
+  if(authConfigured()&&!getSession(req)) return res.status(401).json({error:'Sign in required.'});
   try{
     if(req.method==='GET'){
       const raw=await command(['GET',KEY]);
