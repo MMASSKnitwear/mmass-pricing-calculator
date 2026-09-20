@@ -2,6 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "",
-  "buildCommand": "mkdir -p dist && cp index.html styles.css app1.js app2.js app3.js app4.js dist/",
+  "buildCommand": "mkdir -p dist && cp index.html login.html styles.css auth-gate.js app1.js app2.js app3.js app4.js dist/",
   "outputDirectory": "dist"
 }
